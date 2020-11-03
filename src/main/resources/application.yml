@@ -1,0 +1,22 @@
+management:
+  metrics:
+    web:
+      server:
+        requests-metric-name: "application:request"
+      client:
+        requests-metric-name: "application:client_request"
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    enabled-by-default: false
+  endpoint:
+    health:
+      show-details: always
+      enabled: true
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true
+    info:
+      enabled: true
